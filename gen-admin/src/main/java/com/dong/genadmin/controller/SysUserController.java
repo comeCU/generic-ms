@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Classname SysUserController
@@ -51,8 +52,16 @@ public class SysUserController {
         return HttpResult.ok(sysUserService.findPage(pageRequest));
     }
 
-    // findPermissions ...
+    @GetMapping("/findPermissions")
+    public HttpResult findPermissions(@RequestParam String name) {
+        Set<String> permissions = sysUserService.findPermissions(name);
+//        System.out.println(permissions);
+        return HttpResult.ok(permissions);
+    }
 
-    // findUserRoles ...
+    @GetMapping("/findUserRoles")
+    public HttpResult findUserRoles(@RequestParam Long userId) {
+        return HttpResult.ok(sysUserService.findUserRoles(userId));
+    }
 
 }

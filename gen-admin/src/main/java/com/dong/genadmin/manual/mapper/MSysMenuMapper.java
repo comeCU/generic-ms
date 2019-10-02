@@ -29,6 +29,6 @@ public interface MSysMenuMapper {
      * @param userName
      * @return
      */
-    List<MSysMenu> findByUserName(@Param(value = "userName") String userName);
+    List<MSysMenu> findByUserName(@Param(value = "userName") String userName);  // 待修复的bug
 
 }

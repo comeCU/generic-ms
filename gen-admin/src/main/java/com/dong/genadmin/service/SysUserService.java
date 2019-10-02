@@ -1,11 +1,11 @@
 package com.dong.genadmin.service;
 
-import com.dong.genadmin.generator.model.SysMenu;
-import com.dong.genadmin.generator.model.SysRole;
 import com.dong.genadmin.generator.model.SysUser;
+import com.dong.genadmin.generator.model.SysUserRole;
 import com.dong.gencore.service.CurdService;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @Classname SysUserService
@@ -26,12 +26,12 @@ public interface SysUserService extends CurdService<SysUser> {
      * @param name 用户名
      * @return
      */
-    List<SysMenu> findPermissions(String name);
+    Set<String> findPermissions(String name);
 
     /**
      * 查询用户角色
      * @param userId 用户id
      * @return
      */
-    List<SysRole> findUserRoles(Long userId);
+    List<SysUserRole> findUserRoles(Long userId);
 }
