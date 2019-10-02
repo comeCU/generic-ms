@@ -1,7 +1,6 @@
 package com.dong.genadmin.manual.mapper;
 
 import com.dong.genadmin.generator.model.SysDept;
-import com.dong.genadmin.generator.model.SysUser;
 import com.dong.genadmin.manual.model.MSysDept;
 
 import java.util.List;
