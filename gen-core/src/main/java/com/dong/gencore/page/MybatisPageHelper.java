@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class MybatisPageHelper {
 
-	public static final String findPage = "findPage";
+	public static final String findPage = "findPage";  // 限定mapper层方法命名为findPage
 
 	/**
 	 * 分页查询, 约定查询方法名为 “findPage”
