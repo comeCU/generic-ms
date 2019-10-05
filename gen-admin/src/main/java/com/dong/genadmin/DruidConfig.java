@@ -17,7 +17,9 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 /**
- * 数据源的配置*/
+ * 数据源的配置
+ * 访问Druid：http://localhost:80/druid/index.html
+ */
 @Configuration
 @EnableConfigurationProperties(value = {DruidDataSourceProperties.class})
 public class DruidConfig {
