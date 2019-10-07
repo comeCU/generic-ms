@@ -25,7 +25,7 @@ public class MybatisConfig {
         //设置数据源
         sqlSessionFactoryBean.setDataSource(dataSource);
         //和数据库表相对应的实体类在哪个包，使用别名
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.kp.myboot.admin.**.model");
+        sqlSessionFactoryBean.setTypeAliasesPackage("com.dong.genadmin.**.model");
         //映射文件所在路径
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:**/sqlmap/*.xml"));

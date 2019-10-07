@@ -70,7 +70,7 @@
                <!--enableDeleteByExample="false" enableSelectByExample="false"-->
                <!--selectByExampleQueryId="false">-->
         <!--</table>-->
-        <!-- 生成数据库中所有表的model,mapper,mapper -->
+        <!-- 生成数据库中所有表的model,mapper -->
         <table tableName="%"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
