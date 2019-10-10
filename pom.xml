@@ -23,6 +23,7 @@
         <module>gen-common</module>
         <module>gen-core</module>
         <module>gen-admin</module>
+        <module>gen-monitor</module>
     </modules>
     <dependencies>
         <dependency>

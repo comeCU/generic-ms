@@ -32,4 +32,15 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 50
       max-pool-prepared-statement-per-connection-size: 20
-
+  application:
+    name: gen-admin
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8000"
+# 开放监控接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
